@@ -48,6 +48,11 @@ const RegistrationForm = () => {
       alert("Fill all the information!!!");
       return;
     }
+    if(pass.length<8)
+    {
+      alert("Minimum of 8 characters should be present in password");
+      return;
+    }
     if(pass !== confPass)
     {
       alert("Entered wrong Password!");
